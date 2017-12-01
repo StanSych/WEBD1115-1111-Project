@@ -1,0 +1,47 @@
+.carousel_container
+{
+	float:left; /* necessary for in line position */
+	width: calc(100vw); /* list item width + its margin; width of 3 images that will be shown */
+	overflow:hidden; /*hides items outside the width */
+	/* add extra styling below this line*/
+	/*margin: 200px 0;*/
+	/*margin: 0 0 100px 0;*/
+}
+
+.carousel_container ul
+{
+	position:relative;
+	/* should be negative number of list items + margin */
+	/* 3 means there are total 3 images display in screen.*/
+	/*left:calc(-100vw / 3.5);*/
+	/*width:calc(100vw / 3.5 * 5.5);*/
+	list-style-type:none;
+	/*margin:40px 0;*/
+	padding:0px;
+	/* add extra styling below this line*/
+	/*border: solid 1px blue;*/
+	/*height:300px;*/
+}
+
+.carousel_container ul li
+{
+	float:left;
+
+	/*width:calc(100vw / 3.5 - 50px * 2);*/
+	/* add extra styling below this line*/
+	/*margin: 0 50px;*/
+	/*height:200px;*/
+	position: relative;
+	/*border: solid 1px red;*/
+}
+
+
+.carousel_container ul li img
+{
+	/*width:calc((100vw) / 3.5 - 50px * 2);*/
+	height:100%;
+	width: 100%;
+	/*border: solid 1px green;*/
+}
+
+

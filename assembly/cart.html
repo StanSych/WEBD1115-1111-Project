@@ -1,0 +1,323 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decus Clothes Store</title>
+  <!-- css files here -->
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/style-cart.css">
+  <!-- font awesome here -->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- add favicons here -->
+</head>
+<body>
+  <div class="off-canvas-content" data-off-canvas-content>
+    <div class="grid-container" id="container">
+      <div class="row expanded">
+        <div class="top-bar" id="navigation">
+          <!-- logo -->
+          <h1 class="h1">DECUS<span style="color: #b8a47e; font-size: 1.5em;">.</span></h1><!-- logo -->
+          <div class="top-bar-left hide-for-medium-only hide-for-small-only">
+            <ul class="menu">
+              <li><a href="index.html">HOME PAGE</a></li>
+              <li><a href="index.html">ABOUT US</a></li>
+              <li><a href="products.html">PRODUCTS</a></li>
+              <li><a href="index.html">COLLECTIONS</a></li>
+            </ul>
+          </div>
+          <div class="top-bar-right hide-for-medium-only hide-for-small-only">
+            <a href="cart.html">YOUR CART<i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+          </div>
+          <!-- responsive menu -->
+          <button class="hide-for-large" data-toggle="offCanvas"><i class="fa fa-bars"></i></button>
+          <div class="off-canvas position-right" id="offCanvas" data-off-canvas>
+            <div class="top-bar hide-for-large-only" id="navigation-responsive">
+              <div class="top-bar-right">
+                  <button class="close-button" aria-label="Close menu" type="button" data-close>
+                    <span aria-hidden="true">&times;</span>
+                  </button><!-- close button -->
+                  <ul class="vertical menu">
+                    <li><a href="index.html">HOME PAGE</a></li>
+                    <li><a href="index.html">ABOUT US</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="index.html">COLLECTIONS</a></li>
+                  </ul><!-- menu -->
+              </div>
+            </div>
+          </div><!-- responsive menu off canvas-->
+        </div><!-- top-bar/navigation desktop-->
+      </div><!-- hero-section -->
+
+      <form class="cart-frm data-abide novalidate row small-up-1 medium-up-1 large-up-2">
+        <!-- left form-->
+        <div class="columns">
+          <div data-abide-error class="alert callout" style="display: none;">
+              <p><i class="fi-alert"></i> There are some errors in your form.</p>
+          </div>
+          <ul class="accordion" data-accordion data-multi-expand="true">
+            <!-- Address -->
+            <li class="accordion-item is-active" data-accordion-item>
+              <!-- Accordion tab title -->
+              <a href="#" class="accordion-title">BILLING <span>ADDRESS</span></a>
+              <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+              <div class="row accordion-content" data-tab-content>
+
+                  <div class="medium-6 columns">
+                    <p>First Name</p>
+                    <input type="text" name="txtFirstName" required>
+                  </div>
+
+                  <div class="medium-6 columns">
+                    <p>Last Name</p>
+                    <input type="text" name="txtLastName">
+                  </div>
+
+                  <div class="medium-6 columns">
+                    <p>Email Address</p>
+                    <input type="email" name="txtEmail" placeholder="name@domain.com">
+                  </div>
+
+                  <div class="medium-6 columns">
+                    <p>Phone Number</p>
+                    <input type="tel" name="txtPhone" placeholder="1234567890">
+                  </div>
+
+                  <div class="columns">
+                    <p>Province</p>
+                    <select>
+                      <option value="AB">Alberta</option>
+                      <option value="BC">British Columbia</option>
+                      <option value="MB">Manitoba</option>
+                      <option value="NB">New Brunswick</option>
+                      <option value="NL">Newfoundland</option>
+                      <option value="NS">Nova Scotia</option>
+                      <option value="NU">Nunavut</option>
+                      <option value="ON">Ontario</option>
+                      <option value="PE">Prince Edward Island</option>
+                      <option value="QC">Quebec</option>
+                      <option value="SK">Saskatchewan</option>
+                      <option value="YT">Yukon</option>
+                    </select>
+                  </div>
+
+                  <div class="medium-6 columns">
+                    <p>City</p>
+                    <input type="text" name="txtCity">
+                  </div>
+
+                  <div class="medium-6 columns">
+                    <p>Postal Code</p>
+                    <input type="text" name="txtPost" placeholder="A1B2C3">
+                  </div>
+
+                  <div class="columns">
+                    <p>Address</p>
+                    <input type="text" name="txtAddress">
+                  </div>
+              </div>
+            </li><!-- Address -->
+
+            <li class="accordion-item" data-accordion-item>
+              <a href="#" class="accordion-title">BILLING <span class="fontG">INFORMATION</span></a>
+              <div class="row accordion-content" data-tab-content>
+                <div class="columns">
+                  <p>Card Number</p>
+                  <input type="text" name="txtCardNum"required>
+                </div>
+
+                <div class="columns">
+                  <p>Expiration Date</p>
+                  <div class="row small-up-2">
+                    <div class="month-col columns">
+                      <input type="text" name="txtExpireMonth" required placeholder="MM">
+                    </div>
+                    <div class="year-col columns">
+                      <input type="text" name="txtExpireYear" required placeholder="YY">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="columns">
+                  <p>Card Holder</p>
+                  <input type="text" name="txtCardHolder" required>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="accordion-item" data-accordion-item>
+              <a href="#" class="accordion-title">OTHER <span class="fontG">NOTES</span></a>
+              <div class="row accordion-content" data-tab-content>
+                <div class="columns">
+                  <textarea name="txtNote" rows="5" placeholder="Enter additional information."></textarea>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div><!-- left form-->
+
+        <!-- right form-->
+        <div class="columns">
+          <div class="product-row row">
+          <!-- products -->
+            <p class="font-title">YOUR ORDER <span>CHECK</span></p>
+            <div class="columns">
+              <div class="row">
+                <div class="product-img-col small-3 medium-4 large-5 columns">
+                  <img src="images/item1.jpg" alt="item1">
+                </div>
+                <div class="product-text-col small-7 medium-7 large-6 columns">
+                  <p>Denim Shorts In Slim Fit</p>
+                  <p class="fontS">Shorts</p>
+                  <p class="font-price">$124</p>
+                </div>
+                <div class="small-2 medium-1 large-1 columns">
+                  <button type="button" class="button warning clear large">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="columns">
+              <div class="row">
+                <div class="product-img-col small-3 medium-4 large-5 columns">
+                  <img src="images/item2.jpg" alt="item1">
+                </div>
+                <div class="product-text-col small-7 medium-7 large-6 columns">
+                  <p>Denim Shorts In Slim Fit</p>
+                  <p class="fontS">Shorts</p>
+                  <p class="font-price">$124</p>
+                </div>
+                <div class="small-2 medium-1 large-1 columns">
+                  <button type="button" class="button warning clear large">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="columns">
+              <div class="row">
+                <div class="product-img-col small-3 medium-4 large-5 columns">
+                  <img src="images/item3.jpg" alt="item1">
+                </div>
+                <div class="product-text-col small-7 medium-7 large-6 columns">
+                  <p>Denim Shorts In Slim Fit</p>
+                  <p class="fontS">Shorts</p>
+                  <p class="font-price">$124</p>
+                </div>
+                <div class="small-2 medium-1 large-1 columns">
+                  <button type="button" class="button warning clear large">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="columns">
+              <div class="row">
+                <div class="product-img-col small-3 medium-4 large-5 columns">
+                  <img src="images/item4.jpg" alt="item1">
+                </div>
+                <div class="product-text-col small-7 medium-7 large-6 columns">
+                  <p>Denim Shorts In Slim Fit</p>
+                  <p class="fontS">Shorts</p>
+                  <p class="font-price">$124</p>
+                </div>
+                <div class="small-2 medium-1 large-1 columns">
+                  <button type="button" class="button warning clear large">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Subtotal -->
+            <div class="columns">
+              <div class="total-row row">
+                <hr>
+                <div class="small-4 medium-3 large-4 columns">
+                  <p>Subtotal</p>
+                  <p>Tax</p>
+                  <p>Shipping</p>
+                </div>
+                <div class="small-4 medium-6 large-6 columns">
+                </div>
+                <div class="small-4 medium-3 large-2 columns">
+                  <p class="font-price">$248</p>
+                  <p class="font-price">$32.24</p>
+                  <p class="font-price">FREE</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Checkout -->
+            <div class="columns">
+              <div class="checkout-row row">
+                <hr>
+                <div class="small-4 medium-3 large-4 columns">
+                  <p>Order Total</p>
+                </div>
+                <div class="small-4 medium-6 large-6 columns">
+                </div>
+                <div class="small-4 medium-3 large-2 columns">
+                  <p class="font-price">$280.24</p>
+                </div>
+                <div class="small-6 medium-3 large-6 small-centered medium-centered large-centered columns">
+                  <button class="button" type="submit">CHECKOUT</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div><!-- right form-->
+      </form><!-- CART FORM-->
+
+
+      <footer class="row expanded medium-12 columns" id="footer">
+        <div class="medium-10 columns medium-centered ">
+          <div class="medium-9 columns">
+            <div class="medium-3 columns">
+              <h1 class="h1">DECUS<span style="color: #b8a47e; font-size: 1.5em;">.</span></h1><!-- logo -->
+            </div>
+            <div class="medium-8 columns hide-for-medium-only hide-for-small-only">
+              <ul class="menu">
+                <li><a href="index.html">HOME PAGE</a></li>
+                <li><a href="index.html">ABOUT US</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="index.html">COLLECTIONS</a></li>
+              </ul>
+            </div>
+          </div><!-- logo + nav -->
+          <div class="large-3 medium-5 small-12 columns">
+            <form id="form">
+              <legend>Subscribe to our Newsletter</legend>
+              <div class="input-group">
+              <input class="input-group-field" type="text">
+                <div class="input-group-button">
+                  <input type="submit" class="button" value="Submit">
+                </div>
+              </div>
+            </form>
+          </div><!-- newsletter -->
+        </div>
+      </footer><!-- footer -->
+
+    </div><!-- container -->
+  </div><!-- off-canvas content -->
+
+  <!-- SCRIPTS -->
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/app.js"></script>
+  <!-- html5 shiv -->
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <!--[if lt IE 9]> <script src="dist/html5shiv.js"></script> <![endif]-->
+  <!-- modernizr -->
+  <script type="text/javascript" src="js/modernizr-custom.js"></script>
+</body>
+</html>
